@@ -9,7 +9,6 @@ export default function Auth() {
 
   const navigate = useNavigate();
 
-  const navigate = useNavigate();
 
   const { signUp, login } = useAuth();
 
@@ -23,7 +22,7 @@ export default function Auth() {
     setError(null);
     let result;
     if(mode === "signup") {
-      result = signUp(date.email, data.password);
+      result = signUp(data.email, data.password);
     }else {
       result = login(data.email, data.password);
     }
